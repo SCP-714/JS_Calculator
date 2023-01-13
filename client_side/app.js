@@ -1,3 +1,14 @@
-alert('this works!')
-const button = document.getElementById("buttOne");
-button.addEventListener("click",function(){ alert("Hello World!"); });
+const button = document.getElementById("searchButton");
+
+button.addEventListener("click",function(){ alert("gottem"); });
+
+// Execute a function when the user presses a key on the keyboard
+button.addEventListener("keypress", function(event) {
+    // If the user presses the "Enter" key on the keyboard
+    if (event.key === "Enter") {
+      // Cancel the default action, if needed
+      event.preventDefault();
+      // Trigger the button element with a click
+      document.getElementById("searchButton").click();
+    }
+  });
