@@ -1,3 +1,4 @@
-.displayArea{
-background-color: aqua;
+.calculatorArea{
+display: flex;
+justify-content: center;
 }

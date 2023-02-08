@@ -1,4 +1,4 @@
-const button = document.getElementById("searchButton");
+const button = document.getElementById("equals");
 
 button.addEventListener("click",function(){ alert("gottem"); });
 
@@ -9,6 +9,6 @@ button.addEventListener("keypress", function(event) {
       // Cancel the default action, if needed
       event.preventDefault();
       // Trigger the button element with a click
-      document.getElementById("searchButton").click();
+      document.getElementById("equals").click();
     }
   });
