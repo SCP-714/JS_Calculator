@@ -42,3 +42,18 @@ addButton.addEventListener("keypress", function(event) {
         document.getElementById("subtract").click();
       }
     });
+
+    const divideButton = document.getElementById("divide");
+
+    divideButton.addEventListener("click",function(){ alert("division"); });
+  
+  // Execute a function when the user presses a key on the keyboard
+  divideButton.addEventListener("keypress", function(event) {
+      // If the user presses the "Enter" key on the keyboard
+      if (event.key === "Enter") {
+        // Cancel the default action, if needed
+        event.preventDefault();
+        // Trigger the button element with a click
+        document.getElementById("divide").click();
+      }
+    });
